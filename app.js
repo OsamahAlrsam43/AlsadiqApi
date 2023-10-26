@@ -53,4 +53,11 @@ app.use("/api/v1/fileupload", require("./routes/UpFilepdf"));
 
 //Connect & Port
 //const port =process.env.PORTSERVER;
-app.listen(8083, () => console.log(`server start on the port 8083`));
+//app.listen(8083, () => console.log(`server start on the port 8083`));
+
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`)
+})
+
